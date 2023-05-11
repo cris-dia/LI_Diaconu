@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./Cart.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <script src="./Cart.js"></script>
+    <title>Cart</title>
+</head>
+<body>
+     <!-- Navigation menu start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <img class="navbar-brand" src="./media/vecteezy_circle-logo_1191986.png"></img>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button></div>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="http://192.168.0.162:8080">Main</a>
+              </li>
+              <li class="nav-item" id="login-btn">
+                <a class="nav-link" href="./Login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./AboutUs.html">About Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./Cart.html">
+                  <span class="glyphicon glyphicon-shopping-cart"></span> Cart
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="glyphicon glyphicon-user"></span> Your Account
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+      <!-- Navigation menu end -->
+      <div class="container-fluid cart-body">
+        <div class="container Cart-Container ">
+          <div class="row justify-content-between align-items-center mt-3 mx-2">
+            <div class="col-sm-6 col-md-10">
+              <h3 class="heading">Shopping Cart</h3>
+            </div>
+            <div class="col-sm-6 col-md-2 text-md-end">
+              <h5 class="action">Remove All</h5>
+            </div>
+          </div>
+          <hr>
+          <div class="row Cart-Items" id="cartItems">
+            <script>displayCartItems();</script>
+          </div>
+          
+          <hr>
+          <div class="row checkout">
+            <div class="col-md-8 total">
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <div class="Subtotal">Sub-Total</div>
+                  <div class="items">2 items</div>
+                </div>
+                <div class="col-6 col-md-8 text-end">
+                  <div class="total-amount">$6.18</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-end">
+              <button class="button btn btn-primary">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="footer footer-expand-lg p-4 bg-dark text-white text-center">
+        <div class="container icons-grid">
+          <a href="https://ro-ro.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/GenshinImpact/status/1641742136046505986" class="fa fa-twitter"></a>
+          <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+          <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
